@@ -29,14 +29,8 @@ function getUserMsg() {
             }
             xuanRan(ret.data);
 
-        },
-        complete: function (ret) {
-            console.log(ret);
-            if (ret.responseJSON.status !== 0 && ret.responseJSON.message !== '获取用户基本信息成功！') {
-                localStorage.removeItem('token');
-                location.href = '/login.html';
-            }
         }
+
     })
 }
 
