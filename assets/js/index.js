@@ -36,7 +36,7 @@ function getUserMsg() {
 
 function xuanRan(opt) {
     //显示用户名
-    var name = opt.username || opt.nickname;
+    var name = opt.nickname || opt.username;
     $('#welcome').html('欢迎' + name);
     //判断显示文本头像还是图片头像
     if (opt.user_pic !== null) {
